@@ -3,7 +3,7 @@
     function auditDynamicTag(optionElement) {
         var val = optionElement.val();
         $.ajax({
-            type: "post",
+            type: "get",
             url: "/horilla-audit-log",
             data: {
                 csrfmiddlewaretoken: getCookie("csrftoken"),
